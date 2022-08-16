@@ -1,10 +1,3 @@
-const playMovie  = document.querySelector(".mr_movie");
-
-playMovie.addEventListener('click', function(){
-    playMovie.requestFullscreen();
-    playMovie.play();
-})
-
 // GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,12 +19,17 @@ boxScroll.to(".box1", {
 ScrollTrigger.create({
     animation: boxScroll,
     trigger: ".section_trigger",
-    start: "top top ",
+    start: "top top",
     end: "+=1000",
     scrub: 2,
     markers: true,
     pin: true,
 });
-    
-    
 
+// 영상재생
+const playMovie  = document.querySelector(".mr_movie");
+
+playMovie.addEventListener('click', function(){
+    playMovie.requestFullscreen();
+    playMovie.play();
+})
