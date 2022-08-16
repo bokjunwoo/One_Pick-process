@@ -1,0 +1,586 @@
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+KR:wght@400;700;900&family=Poppins:wght@900&family=Rock+Salt&display=swap');
+/*
+font-family: 'Bree Serif', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rock Salt', cursive;
+*/
+
+body {
+    font-family: "Bree Serif", "Noto Sans KR";
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    &.section_01 {
+        height: 100vh;
+        background-color: #FFF9CA;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 2;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 20vh;            
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0), #FFDEB4);
+        }
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .main_01 {
+                > h1 {
+                    font-size: 150px;
+                    margin-bottom: 100px;
+                }
+                > h2 {
+                    font-size: 100px;
+                    margin-bottom: 120px;
+                }
+
+                > p {
+                    font-size: 30px;
+                    margin-left: 70%;
+                }
+            }
+        }
+    }
+
+    &#section_02 {
+        height: 100vh;
+        background-color: #FFDEB4;
+        
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .main_02 {
+
+                > h1 {
+                    font-size: 150px;
+                }
+                
+                .icon {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 3vw;
+                    
+
+                    > div {
+                        width: 300px;
+                        height: 400px;
+                        border: 3px solid black;
+                        position: relative;
+                        
+
+                        > i {
+                            position: absolute;
+                            top: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 50px;
+                        }
+
+                        > p {
+                            position: absolute;
+                            top: 40%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 20px;
+                            line-height: 2;
+
+                            > strong {
+                                font-size: 30px;
+                            }
+
+                            > a {
+                                &:hover {
+                                    color: red ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //벤치마킹
+    &.section_mr {
+        height: 100vh;
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .sectiom_mr_flex {
+                display: flex;
+
+                > div {
+                    width: 50%;
+                    height: 100vh;
+                }
+
+                .section_mr_text {
+                    > h1 {
+                        font-size: 50px;
+                        margin-top: 3vw;
+                        margin-bottom: 8vw;
+                    }
+                    .text_left {
+                        font: 700 150px/1 "Poppins";
+                        float: left;
+                        margin-bottom: 2vw;
+                    }
+                    .text_right {
+                        font: 700 150px/1 "Poppins";
+                        float: right;
+                    }
+                }
+
+                .section_mr_video {
+                    position: relative;
+                    
+                    .back {
+                        margin-top: 4vw;
+                        float: right;
+                        font-size: 30px;
+                    }
+
+                    > video {
+                        position: absolute;
+                        width: 40vw;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+
+
+    //html & css
+    &.section_lan {
+        height: 100vh;
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .section_lan_flex {
+                display: flex;
+
+                > div {
+                    width: 50%;
+                    height: 100vh;
+                }
+
+                .section_lan_html {
+                    position: relative;
+                    > h1 {
+                        font-size: 50px;
+                        margin-top: 3vw;
+                    }
+                    
+                    .html {
+                        position: absolute;
+                        background-image: url("../img/HTML5.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 30vw;
+                        height: 30vw;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        margin-top: 3vw;
+                    }
+                }
+
+                .section_lan_css {
+                    position: relative;
+
+                    .css {
+                        position: absolute;
+                        background-image: url("../img/SCSS.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 27vw;
+                        height: 27vw;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        margin-top: 3vw;
+                        margin-left: 3vw;
+                    }
+                }
+
+                .section_lan_js {
+                    position: relative;
+
+                    .back {
+                        margin-top: 4vw;
+                        float: right;
+                        font-size: 30px;
+                    }
+
+                    .js {
+                        position: absolute;
+                        background-image: url("../img/JS.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 30vw;
+                        height: 30vw;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        margin-top: 1vw;
+                    }
+                }
+            } 
+        }
+    }
+
+    //scroll trigger
+    &.section_trigger {
+        height: 100vh;
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .section_tr_flex {
+                display: flex;
+
+                > div {
+                    width: 50%;
+                    height: 100vh;
+                }
+
+                .section_tr_html {
+                    position: relative;
+                    > h1 {
+                        position: fixed;
+                        font-size: 50px;
+                        margin-top: 3vw;
+                    }
+                    
+                    .tigger {
+                        position: fixed;
+                        background-image: url("../img/GSAP.jpg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 30vw;
+                        height: 19vw;
+                        top: 50%;
+                        left: 18%;
+                        transform: translate(-25%, -50%);
+                        margin-top: 3vw;
+                    }
+                }
+
+                .section_tr_scroll {
+                    position: relative;
+
+                    .back {
+                        margin-top: 4vw;
+                        float: right;
+                        font-size: 30px;
+                    }
+
+                    .box1 {
+                        width: 50px;
+                        height: 50px;
+                        background-color: orange;
+                        text-align: center;
+                        line-height: 48px;
+                        margin-bottom: 20px;
+                        margin-top: 100px;
+                        margin-left: 3vw;
+                    }
+
+                    .box2 {
+                        width: 50px;
+                        height: 50px;
+                        background-color: yellow;
+                        text-align: center;
+                        line-height: 48px;
+                        margin-left: 3vw;
+                    }
+                }
+            } 
+        }
+    }
+
+    //기획 배경
+    &.section_plan {
+        height: 100vh;
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .sectiom_plan_flex {
+                display: flex;
+
+                > div {
+                    width: 50%;
+                    height: 100vh;
+                }
+
+                .section_plan_text {
+                    > h1 {
+                        font-size: 50px;
+                        margin-top: 3vw;
+                        margin-bottom: 8vw;
+                    }
+                }
+
+                .section_plan_video {
+                    position: relative;
+                    
+                    .back {
+                        margin-top: 4vw;
+                        float: right;
+                        font-size: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //front_backend
+    &.section_fb {
+        height: 100vh;
+
+        .inner {
+            width: 90%;
+            margin: auto;
+
+            .section_fb_flex {
+                display: flex;
+
+                > div {
+                    width: 50%;
+                    height: 100vh;
+                }
+
+                .section_fb_hs {
+                    position: relative;
+                    > h1 {
+                        font-size: 50px;
+                        margin-top: 3vw;
+                    }
+                    
+                    .hs {
+                       
+                        .member1 {
+                            position: relative;
+                            margin: 2vw auto auto auto;
+                            width: 280px;
+                            height: 500px;
+                            border-radius: 20px;
+                            border: 3px solid black;
+
+                            .member1_img {
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: 30px;
+
+                                > img {
+                                    
+                                    width: 200px;
+                                    height: 200px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            > .github {
+                                position: absolute;
+                                left: 23%;
+                                top: 250px;
+
+                                > a {
+                                    font-size: 24px;
+
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+
+                            .text_hs {
+                                position: absolute;
+                                width: 220px;
+                                height: 180px;
+                                top: 300px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                font-size: 20px;
+                                line-height: 30px;
+
+                                .title1 {
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+                                
+                                .last1 {
+                                    margin-top: 30px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .section_fb_ye {
+                    position: relative;
+
+                    .ye {
+
+                        .member2 {
+                            position: relative;
+                            margin: 14.5vw auto auto auto;
+                            width: 280px;
+                            height: 500px;
+                            border-radius: 20px;
+                            border: 3px solid black;
+
+                            .member2_img {
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: 30px;
+
+                                > img {
+                                    width: 200px;
+                                    height: 200px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            > .github {
+                                position: absolute;
+                                left: 14%;
+                                top: 250px;
+
+                                > a {
+                                    font-size: 24px;
+
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+
+                            .text_ye {
+                                position: absolute;
+                                width: 220px;
+                                height: 180px;
+                                top: 300px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                font-size: 20px;
+
+                                .title2 {
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+
+                                .last2 {
+                                    margin-top: 12px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .section_fb_jw {
+                    position: relative;
+
+                    .back {
+                        margin-top: 4vw;
+                        float: right;
+                        font-size: 30px;
+                    }
+
+                    .jw {
+                        
+                        .member3 {
+                            position: relative;
+                            margin: 14.5vw auto auto auto;
+                            width: 280px;
+                            height: 500px;
+                            border-radius: 20px;
+                            border: 3px solid black;
+
+                            .member3_img {
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: 30px;
+
+                                > img {
+                                    width: 200px;
+                                    height: 200px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            > .github {
+                                position: absolute;
+                                left: 23%;
+                                top: 250px;
+
+                                > a {
+                                    font-size: 24px;
+
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+
+                            .text_jw {
+                                position: absolute;
+                                width: 220px;
+                                height: 180px;
+                                top: 300px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                font-size: 20px;
+
+                                .title3 {
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+
+                                .last3 {
+                                    margin-top: 50px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

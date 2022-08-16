@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
