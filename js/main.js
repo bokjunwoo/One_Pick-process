@@ -22,11 +22,10 @@ ScrollTrigger.create({
     start: "top top",
     end: "+=1000",
     scrub: 2,
-    markers: true,
+    // markers: true,
     pin: true,
 });
 
-// 영상재생
 const playMovie  = document.querySelector(".mr_movie");
 
 playMovie.addEventListener('click', function(){

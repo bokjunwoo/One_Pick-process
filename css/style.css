@@ -302,18 +302,79 @@ section.section_plan .inner .sectiom_plan_flex > div {
   width: 50%;
   height: 100vh;
 }
-section.section_plan .inner .sectiom_plan_flex .section_plan_text > h1 {
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 > h1 {
   font-size: 50px;
   margin-top: 3vw;
   margin-bottom: 8vw;
 }
-section.section_plan .inner .sectiom_plan_flex .section_plan_video {
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea1 {
+  width: 550px;
+  height: 250px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea1 > ul {
+  font: bold 30px/1 "Noto Sans KR";
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea1 > ul > li {
+  font: normal 18px/1.2 "Noto Sans KR";
+  margin-bottom: 5px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea1 > ul > li:nth-of-type(1) {
+  margin-top: 30px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea2 {
+  width: 550px;
+  height: 250px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea2 > ul {
+  font: bold 30px/1 "Noto Sans KR";
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea2 > ul > li {
+  font: normal 18px/1.2 "Noto Sans KR";
+  margin-bottom: 5px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text1 .idea2 > ul > li:nth-of-type(1) {
+  margin-top: 30px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 {
   position: relative;
 }
-section.section_plan .inner .sectiom_plan_flex .section_plan_video .back {
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .back {
   margin-top: 4vw;
   float: right;
   font-size: 30px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 > h1 {
+  font-size: 50px;
+  margin-top: 3vw;
+  margin-bottom: 8vw;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea3 {
+  width: 550px;
+  height: 250px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea3 > ul {
+  font: bold 30px/1 "Noto Sans KR";
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea3 > ul > li {
+  font: normal 18px/1.2 "Noto Sans KR";
+  margin-bottom: 5px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea3 > ul > li:nth-of-type(1) {
+  margin-top: 30px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea4 {
+  width: 500px;
+  height: 250px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea4 > ul {
+  font: bold 30px/1 "Noto Sans KR";
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea4 > ul > li {
+  font: normal 18px/1.2 "Noto Sans KR";
+  margin-bottom: 5px;
+}
+section.section_plan .inner .sectiom_plan_flex .section_plan_text2 .idea4 > ul > li:nth-of-type(1) {
+  margin-top: 30px;
 }
 section.section_fb {
   height: 100vh;
@@ -374,7 +435,7 @@ section.section_fb .inner .section_fb_flex .section_fb_hs .hs .member1 .text_hs 
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
 }
 section.section_fb .inner .section_fb_flex .section_fb_hs .hs .member1 .text_hs .title1 {
   font-size: 30px;
@@ -425,6 +486,7 @@ section.section_fb .inner .section_fb_flex .section_fb_ye .ye .member2 .text_ye 
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
+  line-height: 20px;
 }
 section.section_fb .inner .section_fb_flex .section_fb_ye .ye .member2 .text_ye .title2 {
   font-size: 30px;
@@ -480,14 +542,52 @@ section.section_fb .inner .section_fb_flex .section_fb_jw .jw .member3 .text_jw 
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
+  line-height: 20px;
 }
 section.section_fb .inner .section_fb_flex .section_fb_jw .jw .member3 .text_jw .title3 {
   font-size: 30px;
   text-align: center;
 }
 section.section_fb .inner .section_fb_flex .section_fb_jw .jw .member3 .text_jw .last3 {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: right;
+}
+section.section_rv {
+  height: 100vh;
+}
+section.section_rv .inner {
+  width: 90%;
+  margin: auto;
+}
+section.section_rv .inner .sectiom_rv_flex {
+  display: flex;
+}
+section.section_rv .inner .sectiom_rv_flex > div {
+  width: 50%;
+  height: 100vh;
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_text > h1 {
+  font-size: 50px;
+  margin-top: 3vw;
+  margin-bottom: 8vw;
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_text > ul {
+  font: bold 30px/1 "Noto Sans KR";
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_text > ul > li {
+  font: normal 18px/1.2 "Noto Sans KR";
+  margin-bottom: 5px;
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_text > ul > li:nth-of-type(1) {
+  margin-top: 30px;
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_video {
+  position: relative;
+}
+section.section_rv .inner .sectiom_rv_flex .section_rv_video .back {
+  margin-top: 4vw;
+  float: right;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
